@@ -58,7 +58,7 @@ php artisan make:repository User
 You can customize the stub files used to generate the repository and interface. To do this, publish the stub files:
 
 ```sh
-php artisan vendor:publish --provider="YourVendor\RepositoryPatternGenerator\RepositoryPatternGeneratorServiceProvider" --tag="stubs"
+php artisan vendor:publish --provider="phpsamurai\RepositoryPatternGenerator\RepositoryPatternGeneratorServiceProvider" --tag="stubs"
 ```
 
 Edit the stub files located in the `stubs/repository` directory to tailor them to your needs. The generator will use
