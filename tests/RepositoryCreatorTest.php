@@ -50,7 +50,7 @@ class RepositoryCreatorTest extends TestCase
 
         $this->deleteDirectory($this->_basePath);
         $this->setUpConfiguration($this->app, $this->_config);
-        $this->_repositoryCreator = $this->app->make('phpsamurai\RepositoryPatternGenerator\RepositoryCreator');
+        $this->_repositoryCreator = $this->app->make('phpsamurai\RepositoryPatternGenerator\RepositoryPatternCreator');
     }
 
     /** @test */
