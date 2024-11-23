@@ -1,0 +1,20 @@
+<?php
+
+namespace DummyRepositoryBaseNamespace;
+
+use DummyModelNamespace;
+use DummyRepositoryContractNamespace;
+use phpsamurai\RepositoryPatternGenerator\AbstractEloquentRepositoryPattern;
+
+class DummyClass extends AbstractEloquentRepositoryPattern implements DummyContract {
+
+  /**
+   * Create a new DummyClass repository instance.
+   *
+   * @param \DummyModelNamespace $model
+   * @return void
+   */
+  public function __construct(DummyModel $model) {
+    $this->_model = $model;
+  }
+}

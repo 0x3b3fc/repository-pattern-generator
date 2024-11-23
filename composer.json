@@ -1,0 +1,49 @@
+{
+    "name": "phpsamurai/repository-pattern-generator",
+    "description": "A simple Laravel package to implement and generate the repository pattern in your application.",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Sief Hesham",
+            "email": "dev.sief.hesham@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "phpsamurai\\RepositoryPatternGenerator\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "phpsamurai\\RepositoryPatternGenerator\\": "./tests",
+            "phpsamurai\\RepositoryPatternGenerator\\Models\\": "./tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "require": {
+        "php": "^8.0",
+        "laravel/framework": "^10.0",
+        "lstrojny/functional-php": "^1.17",
+        "illuminate/support": "*",
+        "illuminate/filesystem": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5",
+        "orchestra/testbench": "^8.28"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "extra": {
+        "laravel": {
+            "providers": [
+                "phpsamurai\\RepositoryPatternGenerator\\Providers\\RepositoryPatternGeneratorServiceProvider"
+            ]
+        }
+    }
+}
