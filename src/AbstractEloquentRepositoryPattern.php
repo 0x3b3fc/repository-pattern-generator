@@ -57,7 +57,7 @@ abstract class AbstractEloquentRepositoryPattern
      * @param bool $fail Whether to throw an exception if no model is found.
      * @return Model|Collection|null The found model or null.
      */
-    public function getFirstBy(string $key, $value, array $with = [], string $comparator = '=', bool $fail = false)
+    public function getFirstBy($key, $value, array $with = [], $comparator = '=', $fail = false)
     {
         $q = $this->_model->with($with)->where($key, $comparator, $value);
         return $fail ? $q->firstOrFail() : $q->first();
