@@ -36,7 +36,12 @@ the service provider in `config/app.php`:
 You can publish the configuration file with the following command:
 
 ```sh
-php artisan vendor:publish --provider="phpsamurai\RepositoryPatternGenerator\RepositoryPatternGeneratorServiceProvider" --tag="config"
+php artisan vendor:publish
+```
+
+Then 
+```
+RepositoryPatternGeneratorServiceProvider
 ```
 
 ### Generate a Repository
